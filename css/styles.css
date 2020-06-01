@@ -1,0 +1,115 @@
+@font-face {
+  font-family: BeVietnam;
+  src: url('../fonts/BeVietnam-regular.ttf');
+  font-weight: normal;
+}
+
+:root {
+  --DarkBlue: hsl(228, 39%, 23%);
+  --VaryLightGray: hsl(0, 0%, 98%);
+  --DarkGrayishBlue: hsl(227, 12%, 61%);
+  --BrightRed: hsl(12, 88%, 59%);
+  --HoverBrightRed: hsl(12, 88%, 69%);
+  --VeryPaleRed: hsl(13, 100%, 96%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'BeVietnam', sans-serif;
+}
+
+.container {
+  padding: 0 5%;
+}
+
+/* navigation */
+.main-nav {
+  height: 56px;
+  width: 100%;
+
+  display: flex;
+}
+
+.logo,
+.btn {
+  align-self: center;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  align-self: center;
+  color: var(--DarkBlue);
+}
+
+.nav-links a:hover {
+  color: var(--DarkGrayishBlue);
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 0 .4em;
+}
+
+ul.nav-links  {
+  padding: 0;
+}
+
+.btn button {
+  border-radius: 20px;
+  box-shadow: 0 5px 10px var(--BrightRed);
+  border: 1px solid var(--BrightRed);
+  background-color: var(--BrightRed);
+  padding: 8px 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  opacity: 0.8;
+}
+
+.toggle-btn {
+  margin-left: auto;
+  align-self: center;
+}
+
+/* .toggled-nav-links {
+  width: 80%;
+  height: 500px;
+  border-radius: 5px;
+  background-color: var(--VaryLightGray);
+  margin: auto;
+} */
+
+@media (min-width: 769px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .btn button {
+    display: none;
+  }
+  .nav-links {
+    margin-right: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+}
