@@ -1,7 +1,5 @@
 const hamburger = document.querySelector('.toggle-btn');
-const mobileNavigation = document.querySelector('.toggled-nav-links')
-
-
+const mobileNavigation = document.querySelector('.toggled-nav-links');
 
 hamburger.addEventListener('click', () => {
   if (mobileNavigation.style.display == 'block') {
@@ -9,4 +7,4 @@ hamburger.addEventListener('click', () => {
   } else {
     mobileNavigation.style.display = 'block';
   }
-})
+});
