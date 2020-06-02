@@ -4,6 +4,18 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: BeVietnam;
+  src: url('../fonts/BeVietnam-medium.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: BeVietnam;
+  src: url('../fonts/BeVietnam-bold.ttf');
+  font-weight: 600;
+}
+
 :root {
   --DarkBlue: hsl(228, 39%, 23%);
   --VaryLightGray: hsl(0, 0%, 98%);
@@ -23,7 +35,9 @@ body {
 }
 
 .container {
+  height: 100vh;
   padding: 0 5%;
+  background-image: linear-gradient(to bottom, white, hsl(0, 0%, 70%));
 }
 
 /* navigation */
@@ -49,6 +63,7 @@ body {
   text-decoration: none;
   align-self: center;
   color: var(--DarkBlue);
+  font-weight: 300;
 }
 
 .nav-links a:hover {
@@ -57,7 +72,7 @@ body {
 
 .nav-links li {
   list-style: none;
-  padding: 0 .4em;
+  padding: 0 8px;
 }
 
 ul.nav-links  {
@@ -78,18 +93,40 @@ ul.nav-links  {
   opacity: 0.8;
 }
 
+/* toggled navigation for mobile */
+
 .toggle-btn {
   margin-left: auto;
   align-self: center;
 }
 
-/* .toggled-nav-links {
-  width: 80%;
-  height: 500px;
+.toggled-nav-links {
+  display: none;
+  width: 90%;
+  padding: 40px 24px;
   border-radius: 5px;
   background-color: var(--VaryLightGray);
-  margin: auto;
-} */
+  box-shadow: 0 10px 20px var(--DarkGrayishBlue);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  text-align: center;
+  padding: 32px 32px 8px 32px;
+}
+
+
+.toggled-nav-links a {
+  text-decoration: none;
+  color: var(--DarkBlue);
+  font-weight: 600;
+  font-size: 1.125em;
+}
+
+.toggled-nav-links li {
+  list-style: none;
+  padding-bottom: 24px;
+}
+
 
 @media (min-width: 769px) {
   .toggle-btn {
