@@ -1,6 +1,12 @@
-const button = document.querySelector('.toggle-btn');
-const root = document.documentElement;
+const hamburger = document.querySelector('.toggle-btn');
+const mobileNavigation = document.querySelector('.toggled-nav-links')
 
-button.addEventListener('click', () => {
-  root.style.opacity = ".2"
+
+
+hamburger.addEventListener('click', () => {
+  if (mobileNavigation.style.display == 'block') {
+    mobileNavigation.style.display = 'none';
+  } else {
+    mobileNavigation.style.display = 'block';
+  }
 })
