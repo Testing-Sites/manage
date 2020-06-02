@@ -1,7 +1,7 @@
 @font-face {
   font-family: BeVietnam;
   src: url('../fonts/BeVietnam-regular.ttf');
-  font-weight: normal;
+  font-weight: 200;
 }
 
 @font-face {
@@ -32,18 +32,25 @@
 body {
   font-size: 16px;
   font-family: 'BeVietnam', sans-serif;
+  font-weight: 200;
+  color: var(--DarkBlue);
+}
+
+p {
+  color: var(--DarkGrayishBlue);
 }
 
 .container {
   height: 100vh;
   padding: 0 5%;
-  background-image: linear-gradient(to bottom, white, hsl(0, 0%, 70%));
+  background-image: url('../img/bg-simplify-section-desktop.svg');
 }
 
 /* navigation */
 .main-nav {
   height: 56px;
   width: 100%;
+  margin-bottom: 32px;
 
   display: flex;
 }
@@ -63,7 +70,7 @@ body {
   text-decoration: none;
   align-self: center;
   color: var(--DarkBlue);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .nav-links a:hover {
@@ -79,7 +86,8 @@ ul.nav-links  {
   padding: 0;
 }
 
-.btn button {
+.btn button,
+.btn-content {
   border-radius: 20px;
   box-shadow: 0 5px 10px var(--BrightRed);
   border: 1px solid var(--BrightRed);
@@ -89,7 +97,9 @@ ul.nav-links  {
   cursor: pointer;
 }
 
-.btn button:hover {
+
+.btn button:hover,
+.btn-content:hover {
   opacity: 0.8;
 }
 
@@ -128,6 +138,23 @@ ul.nav-links  {
   padding-bottom: 24px;
 }
 
+/* main body  */
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-illustration {
+  width: 50%;
+  max-width: 520px;
+}
+
+.text-heading  {
+  width: 45%;
+  height: 100%;
+}
 
 @media (min-width: 769px) {
   .toggle-btn {
@@ -135,8 +162,14 @@ ul.nav-links  {
   }
 }
 
+@media (min-width: 1270px) {
+  .container {
+    padding: 0 12%;
+  }
+}
+
 @media (max-width: 880px) {
-  .btn button {
+  .btn-toggle button {
     display: none;
   }
   .nav-links {
@@ -148,6 +181,22 @@ ul.nav-links  {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+  .hero-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .text-heading,
+  .hero-illustration {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .text-heading {
+    order: 1;
+  }
+  .hero-illustration  {
+    order: 0;
   }
 
 }
