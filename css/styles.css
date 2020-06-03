@@ -111,14 +111,17 @@ ul.nav-links  {
 }
 
 .toggled-nav-links {
-  position: absolute;
   display: none;
   width: 90%;
+  padding: 40px 24px;
   border-radius: 5px;
   background-color: var(--VaryLightGray);
   box-shadow: 0 10px 20px var(--DarkGrayishBlue);
-  margin-top: 58px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
   text-align: center;
+  padding: 32px 32px 8px 32px;
   z-index: 1000;
 }
 
@@ -195,8 +198,5 @@ ul.nav-links  {
   .hero-illustration  {
     order: 0;
   }
-  .nav-links li {
-    padding: 16px 8px;
-}
 
 }
