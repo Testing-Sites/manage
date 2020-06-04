@@ -38,6 +38,11 @@ body {
 
 p {
   color: var(--DarkGrayishBlue);
+  line-height: 22px;
+}
+
+h4 {
+  display: flex;
 }
 
 .container {
@@ -46,13 +51,15 @@ p {
   background-image: url('../img/bg-simplify-section-desktop.svg');
 }
 
+.flex {
+  display: flex;
+}
+
 /* navigation */
 .main-nav {
   height: 56px;
   width: 100%;
   margin-bottom: 32px;
-
-  display: flex;
 }
 
 .logo,
@@ -61,7 +68,6 @@ p {
 }
 
 .nav-links {
-  display: flex;
   margin-right: auto;
   margin-left: auto;
 }
@@ -112,6 +118,7 @@ ul.nav-links  {
 
 .toggled-nav-links {
   display: none;
+  position: absolute;
   width: 90%;
   padding: 40px 24px;
   border-radius: 5px;
@@ -119,10 +126,16 @@ ul.nav-links  {
   box-shadow: 0 10px 20px var(--DarkGrayishBlue);
   margin-left: auto;
   margin-right: auto;
-  margin-top: 32px;
+  margin-top: 90px;
   text-align: center;
   padding: 32px 32px 8px 32px;
   z-index: 1000;
+}
+
+button.toggle-btn {
+  border-style: none;
+  background: none;
+  padding: 4px;
 }
 
 
@@ -155,6 +168,25 @@ ul.nav-links  {
   width: 45%;
   height: 100%;
 }
+
+/* what is different section */
+
+.whats-different {
+  margin-top: 48px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.heading-text,
+.whats-different-text {
+  width: 45%;
+}
+
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 @media (min-width: 769px) {
   .toggle-btn {
@@ -190,13 +222,15 @@ ul.nav-links  {
   .hero-illustration {
     width: 100%;
     margin: auto;
-    text-align: center;
   }
   .text-heading {
     order: 1;
   }
   .hero-illustration  {
     order: 0;
+  }
+  .text-center {
+    text-align: center;
   }
 
 }
