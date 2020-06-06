@@ -44,12 +44,15 @@ p {
 .container {
   margin: auto;
   max-width: 1400px;
-  height: 100vh;
   padding: 0 8%;
 }
 
 .flex {
   display: flex;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* navigation for lrg screen*/
@@ -200,6 +203,35 @@ button.toggle-btn {
   margin-top: 40px;
 }
 
+/* slide show */
+.slide-show {
+  width: 100%;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 70px;
+}
+
+.testimonials {
+  margin-bottom: 24px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial-card {
+  margin: 0 16px;
+  padding: 16px;
+  background-image: linear-gradient(white 21%, var(--VaryLightGray) 20%);
+  min-width: 450px;
+  height: auto;
+}
+
+.testimonial-card img {
+  position: relative;
+  width: 80px;
+  height: auto;
+}
+
 @media (min-width: 769px) {
   .toggle-btn {
     display: none;
@@ -251,6 +283,11 @@ button.toggle-btn {
   .main-content-heading,
   .aside-content {
     width: 100%;
+  }
+
+  /* slideshow */
+  .slide-show {
+    margin-bottom: 48px;
   }
 }
 
