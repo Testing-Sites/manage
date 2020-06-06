@@ -232,6 +232,29 @@ button.toggle-btn {
   height: auto;
 }
 
+/* footer */
+.bottom-container {
+  padding: 24px 8%;
+  color: white;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--BrightRed);
+}
+
+button[name*="bot"] {
+  background-color: white;
+  color: var(--BrightRed);
+  align-self: center;
+}
+
+footer {
+
+}
+
 @media (min-width: 769px) {
   .toggle-btn {
     display: none;
@@ -254,10 +277,13 @@ button.toggle-btn {
   }
 
   /* hero content */
+  .text-center {
+    text-align: center;
+  }
+
   .hero-content {
     justify-content: center;
     flex-direction: column;
-    text-align: center;
   }
 
   .hero-text,
@@ -276,10 +302,6 @@ button.toggle-btn {
     flex-direction: column;
   }
 
-  .main-content-heading {
-    text-align: center;
-  }
-
   .main-content-heading,
   .aside-content {
     width: 100%;
@@ -288,6 +310,11 @@ button.toggle-btn {
   /* slideshow */
   .slide-show {
     margin-bottom: 48px;
+  }
+
+  /* footer */
+  .bottom-content {
+    flex-direction: column;
   }
 }
 
