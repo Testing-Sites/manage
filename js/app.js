@@ -2,10 +2,8 @@ const hamburger = document.querySelector('.toggle-btn');
 const mobileNavigation = document.querySelector('.toggled-nav-links');
 
 const slideShow = document.querySelector('.testimonials');
+const footerLogo = document.querySelector('#footerLogo');
 
-slideButton.addEventListener('mouseover', (e) => {
-  slideShow.scrollLeft += 10;
-});
 
 hamburger.addEventListener('click', () => {
   if (mobileNavigation.style.display == 'block') {
