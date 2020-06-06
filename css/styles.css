@@ -252,8 +252,12 @@ button[name*="bot"] {
 }
 
 footer {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  background-color: black;
 }
+
+
 
 @media (min-width: 769px) {
   .toggle-btn {
