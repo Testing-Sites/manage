@@ -304,7 +304,7 @@ button.toggle-btn {
 
   .testimonials {
     margin-bottom: 24px;
-    overflow: scroll;
+    overflow: hidden;
   }
 
   .testimonial-card {
