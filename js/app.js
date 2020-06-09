@@ -13,20 +13,16 @@ hamburger.addEventListener('click', () => {
   }
 });
 
-// slideShow
+slideShow
 slideShow.addEventListener('click', (event) => {
   if(event.target.id == "fButton") {
     let fButton = event.target;
     let slideShow = fButton.nextElementSibling;
-    if (fButton) {
-      slideShow.scrollLeft += lwidth;
-    }
+    slideShow.scrollLeft += lwidth;
   }
   if(event.target.id == "bButton") {
     let bButton = event.target;
     let slideShow = bButton.nextElementSibling.nextElementSibling;
-    if (bButton) {
-      slideShow.scrollLeft -= lwidth;
-    }
+    slideShow.scrollLeft -= lwidth;
   }
-})
+});
