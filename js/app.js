@@ -13,7 +13,7 @@ hamburger.addEventListener('click', () => {
   }
 });
 
-slideShow
+
 slideShow.addEventListener('click', (event) => {
   if(event.target.id == "fButton") {
     let fButton = event.target;
