@@ -209,8 +209,33 @@ button.toggle-btn {
   margin: 48px 0 70px 0;
 }
 
-.slide-show button {
+.slideshow-btn-sml {
   display: none;
+}
+
+/* slideshow buttons */
+
+.slideshow-btn-lrg {
+  height: 300px;
+  width: 70px;
+  z-index: 1000;
+  position: absolute;
+
+  background: transparent;
+  border-color: transparent;
+}
+
+.slideshow-btn-lrg:first-child {
+  background-image: url('../img/back.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .3;
+}
+
+.slideshow-btn-lrg:first-child:hover {
+  filter: drop-shadow(0 0 15px);
+  transition: 1s;
+  opacity: .9;
 }
 
 .testimonials {
@@ -244,6 +269,7 @@ button.toggle-btn {
   .toggle-btn {
     display: none;
   }
+
 }
 
 @media (max-width: 880px) {
@@ -294,11 +320,16 @@ button.toggle-btn {
   }
 
   /* slideshow */
+
   .slide-show {
     margin-bottom: 48px;
   }
 
-  .slide-show button {
+  .slideshow-btn-lrg {
+    display: none;
+  }
+
+  .slideshow-btn-sml{
     display: inline-block;
   }
 
